@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const config = require('./config');
-const port =process.env.PORT || 8080;
+var port = process.env.PORT || 8080;
 
 // connect to the database and load models
 require('./server/models').connect(config.dbUri);
