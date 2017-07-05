@@ -4,7 +4,8 @@
   "description": "React App",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --use-strict server.js",
+    "start": "node --use-strict server.js",
+    "dev": "nodemon --use-strict server.js",
     "bundle": "webpack -w"
   },
   "repository": {
