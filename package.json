@@ -1,11 +1,11 @@
 {
-  "name": "React app",
+  "name": "react-app",
   "version": "1.0.0",
   "description": "React App",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --use-strict index.js",
-    "bundle": "webpack"
+    "bundle": "webpack -w"
   },
   "repository": {
     "type": "git",
