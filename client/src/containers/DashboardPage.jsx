@@ -40,9 +40,12 @@ class DashboardPage extends React.Component {
    * Render the component.
    */
   render() {
-    return (<Dashboard secretData={this.state.secretData} />);
+    return (
+      <Dashboard secretData={this.state.secretData} />
+      );
   }
 
 }
+
 
 export default DashboardPage;

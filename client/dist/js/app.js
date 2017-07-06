@@ -35319,7 +35319,7 @@
 	        _react2.default.createElement(
 	          _reactRouter.IndexLink,
 	          { to: '/' },
-	          'React App'
+	          'Delivery App'
 	        )
 	      ),
 	      _Auth2.default.isUserAuthenticated() ? _react2.default.createElement(
@@ -41189,7 +41189,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+			value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -41201,24 +41201,75 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Dashboard = function Dashboard(_ref) {
-	  var secretData = _ref.secretData;
-	  return _react2.default.createElement(
-	    _Card.Card,
-	    { className: 'container' },
-	    _react2.default.createElement(_Card.CardTitle, {
-	      title: 'Dashboard',
-	      subtitle: 'You should get access to this page only after authentication.'
-	    }),
-	    secretData && _react2.default.createElement(
-	      _Card.CardText,
-	      { style: { fontSize: '16px', color: 'green' } },
-	      secretData
-	    )
-	  );
+			var secretData = _ref.secretData;
+			return _react2.default.createElement(
+					_Card.Card,
+					{ className: 'container' },
+					_react2.default.createElement(_Card.CardTitle, {
+							title: 'Dashboard',
+							subtitle: 'You should get access to this page only after authentication.'
+					}),
+					secretData && _react2.default.createElement(
+							_Card.CardText,
+							{ style: { fontSize: '16px', color: 'green' } },
+							secretData
+					),
+					_react2.default.createElement(
+							'p',
+							{ style: { fontSize: '25px', color: 'red' } },
+							' this is a test '
+					),
+					_react2.default.createElement(
+							'form',
+							null,
+							_react2.default.createElement(
+									'label',
+									null,
+									'Item:',
+									_react2.default.createElement('input', { type: 'text', name: 'Customer' })
+							),
+							' ',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+									'label',
+									null,
+									'Drop off address:',
+									_react2.default.createElement('input', { type: 'text', name: 'Address' })
+							),
+							' ',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+									'label',
+									null,
+									'Drop off city:',
+									_react2.default.createElement('input', { type: 'text', name: 'City' })
+							),
+							' ',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+									'label',
+									null,
+									'Drop off state :',
+									_react2.default.createElement('input', { type: 'text', name: 'name' })
+							),
+							' ',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+									'label',
+									null,
+									'Drop off Zip Code:',
+									_react2.default.createElement('input', { type: 'text', name: 'name' })
+							),
+							' ',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+					)
+			);
 	};
 
 	Dashboard.propTypes = {
-	  secretData: _react.PropTypes.string.isRequired
+			secretData: _react.PropTypes.string.isRequired
+
 	};
 
 	exports.default = Dashboard;
